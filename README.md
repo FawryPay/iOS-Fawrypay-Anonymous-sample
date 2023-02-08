@@ -50,10 +50,10 @@ This document illustrates how our gateway can be integrated within your iOS appl
 <img src="./Docs/5.png" width="350">
 
 2. Create an instance of
-    a. LaunchCustomerModel
-    b. LaunchMerchantModel
-    c. ChargeItemsParamsModel
-    d. FawryLaunchModel
+    - LaunchCustomerModel
+    - LaunchMerchantModel
+    - ChargeItemsParamsModel
+    - FawryLaunchModel
 
 and pass the required parameters (Required andoptional parameters are determined below).
 
@@ -108,7 +108,8 @@ FawryLaunchModel
 - **fawryLaunchModelObject. skipReceipt = false**
 
 3. Calling Mode:
-  a. Payment Mode: Call launchAnonymousSDK from the shared instance of FrameworkHelper and the payment screen will launch.
+ 
+ a. Payment Mode: Call launchAnonymousSDK from the shared instance of FrameworkHelper and the payment screen will launch.
 
 <img src="./Docs/7.png" width="900">
 
