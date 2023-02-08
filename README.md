@@ -49,11 +49,11 @@ This document illustrates how our gateway can be integrated within your iOS appl
 
 <img src="./Docs/5.png" width="350">
 
-1. Create an instance of
-  1. LaunchCustomerModel
-  2. LaunchMerchantModel
-  3. ChargeItemsParamsModel
-  4. FawryLaunchModel
+2. Create an instance of
+    a. LaunchCustomerModel
+    b. LaunchMerchantModel
+    c. ChargeItemsParamsModel
+    d. FawryLaunchModel
 
 and pass the required parameters (Required andoptional parameters are determined below).
 
@@ -108,7 +108,7 @@ FawryLaunchModel
 - **fawryLaunchModelObject.** ** skipReceipt ** ** = ** ** false**
 
 3. Calling Mode:
-  A. Payment Mode: Call launchAnonymousSDK from the shared instance of FrameworkHelper and the payment screen will launch.
+  a. Payment Mode: Call launchAnonymousSDK from the shared instance of FrameworkHelper and the payment screen will launch.
 
 <img src="./Docs/7.png" width="900">
 
@@ -121,7 +121,7 @@ FawryLaunchModel
 | enable3Ds | Bool | optional - default value = false | to allow 3D secure payment make it "true" | true |
 | authCaptureModePayment | Bool | optional - default value = false | depends on refund configuration: will be true when refund is enabled and false when refund is disabled | false |
 
-  B. Card Manager Mode: Call launchCardManager from the shared instance of FrameworkHelper and the payment screen will launch.
+  b. Card Manager Mode: Call launchCardManager from the shared instance of FrameworkHelper and the payment screen will launch.
 
 <img src="./Docs/8.png" width="500">
 
@@ -129,10 +129,10 @@ FawryLaunchModel
 
 1. Add a plist file to your project named "Style".
 2. Add keys named:
-  1. primaryColorHex
-  2. secondaryColorHex
-  3. tertiaryColorHex
-  4. headerColorHex
+  a. primaryColorHex
+  b. secondaryColorHex
+  c. tertiaryColorHex
+  d. headerColorHex
 3. Give the keys values of your preferred hex color codes
 
 <img src="./Docs/9.png" width="500">
