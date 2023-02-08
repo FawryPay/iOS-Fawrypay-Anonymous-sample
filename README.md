@@ -150,7 +150,7 @@ Example:
 1. **Payment with card details, in which we take the card details (card number, cvv, expiry date) in the payment screen and then we handle the payment.**
 2. **Payment with card token, in which we have 2 screens, first one manages cards which includes (add, delete, retrieve) for cards and the cards are saved and connected to the customerProfileId parameter that you pass in the initialization. And the second screen is the normal payment screen.**
 
-**To choose which flow you want to start with there is a**  **paymentWithCardToken**  **flag in the initialization of the**  **FawryLaunchModel****.**
+**To choose which flow you want to start with there is a paymentWithCardToken flag in the initialization of the FawryLaunchModel .**
 
 **So if this flag is true you will need to pass**  **customerProfileId**  **to be able to complete a payment with its corresponding cards and if the**  **customerProfileId**  **doesn't have saved cards, when the user choose to pay with credit card we would ask him to click a button to navigate him to add card screen and after adding it successfully he will be redirected automatically to the payment screen to continue the payment flow. And in case the user wanted to delete or check which cards he saved or add a new card without opening the payment screen he can start the flow called launchCardManager as determined in step 2.**
 
