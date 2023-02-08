@@ -39,7 +39,7 @@ On this page we will walk you through iOS SDK integration steps:
 This document illustrates how our gateway can be integrated within your iOS application in simple and easy steps. Please follow the steps in order to integrate the FawryPay iOS SDK in your application.
 
 1. Create a pod file in your application if it doesn't exist. Using this [Cocoapod Guide](https://guides.cocoapods.org/using/using-cocoapods.html)
-3. Add **pod 'FawryPaySDK'** in your pod file and make sure you are using our [latest version](https://github.com/FawryPay/iOS-Fawrypay-Anonymous-sample/tags)
+3. Add **pod 'FawryPaySDK'** in your pod file and make sure you are using our [Latest Version](https://github.com/FawryPay/iOS-Fawrypay-Anonymous-sample/tags)
 4. Open terminal navigated to your project root folder
 5. Run pod install
 
@@ -161,31 +161,31 @@ Example:
 
 1. **completionBlock: { FawrySDKStatusCode?**  **in**  **}**
 
-**called when flow launched successfully.**
+called when flow launched successfully.
 
-1. **onPreCompletionHandler: { FawryError?**  **in**  **}**
+2. **onPreCompletionHandler: { FawryError?**  **in**  **}**
 
-**called when flow NOT launched.**
+called when flow NOT launched.
 
-1. **errorBlock: { FawryError?**  **in**  **}**
+3. **errorBlock: { FawryError?**  **in**  **}**
 
-**if the payment didn't pass.**
+if the payment didn't pass.
 
-**if you enabled the receipt, this callback will be called after clicking the done button in the receipt.**
+if you enabled the receipt, this callback will be called after clicking the done button in the receipt.
 
-**if you disabled the receipt, this callback will be called upon the finish of the payment screen and the failure of the payment.**
+if you disabled the receipt, this callback will be called upon the finish of the payment screen and the failure of the payment.
 
-1. **onPaymentCompletedHandler: {**  **Any****? **** in **** }**
+4. **onPaymentCompletedHandler: {**  **Any****? **** in **** }**
 
-**will be called only whether the payment passed or not. And it's called upon receiving the response of the payment either success or fail.**
+will be called only whether the payment passed or not. And it's called upon receiving the response of the payment either success or fail.
 
-1. **onSuccessHandler: {**  **Any****? **** in **** }**
+5. **onSuccessHandler: {**  **Any****? **** in **** }**
 
-**if the payment passed.**
+if the payment passed.
 
-**if you enabled the receipt, this callback will be called after clicking the done button in the receipt.**
+if you enabled the receipt, this callback will be called after clicking the done button in the receipt.
 
-**if you disabled the receipt, this callback will be called upon the finish of the payment screen and the success of the payment.**
+if you disabled the receipt, this callback will be called upon the finish of the payment screen and the success of the payment.
 
 - **launchCardManager:**
 
@@ -193,12 +193,12 @@ Example:
 
 1. **errorBlock: { FawryError?**  **in**  **}**
 
-**if an error happened.**
+if an error happened.
 
-1. **onAddedNewCard: { SavedCard**  **in**  **}**
+2. **onAddedNewCard: { SavedCard**  **in**  **}**
 
-**when adding cards successfully.**
+when adding cards successfully.
 
-1. **dismissBlock: { }**
+3. **dismissBlock: { }**
 
-**unused****.**
+unused****.
