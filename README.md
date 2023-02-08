@@ -14,7 +14,7 @@ Make sure you have an active FawryPay account, or [**create an account**](https:
 
 ### **How iOS SDK Looks Like**
 
-<img src="./Docs/1.png" width="200" height="600">
+<img src="./Docs/1.png" width="200">
 
 ![](./Docs/1.png) ![](./Docs/2.png) ![](./Docs/3.png)
 
