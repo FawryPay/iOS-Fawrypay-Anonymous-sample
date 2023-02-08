@@ -103,9 +103,9 @@ FawryLaunchModel
 - **you can pass either signature or secureKey (in this case we will create the signature internally), knowing that if the 2 parameters are passed the secureKey will be ignored and the signature will be used.**
 - You can use below code snippet to show the receipt after payment is done or skip the user input screen while providing mobile and email instead of getting input from the user by setting the configurations **skipCustomerInput** and **skipReceipt** under FawryLaunchModel (Both configurations have a default value of **true** ).
 
-**fawryLaunchModelObject.**** skipCustomerInput **** = **** true**
+- **fawryLaunchModelObject.** ** skipCustomerInput ** ** = **** true**
 
-**fawryLaunchModelObject.**** skipReceipt **** = **** false**
+- **fawryLaunchModelObject.** ** skipReceipt ** ** = ** ** false**
 
 1. Calling Mode:
   1. Payment Mode: Call launchAnonymousSDK from the shared instance of FrameworkHelper and the payment screen will launch.
