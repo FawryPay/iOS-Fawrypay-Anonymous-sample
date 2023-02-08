@@ -107,8 +107,8 @@ FawryLaunchModel
 
 - **fawryLaunchModelObject.** ** skipReceipt ** ** = ** ** false**
 
-1. Calling Mode:
-  1. Payment Mode: Call launchAnonymousSDK from the shared instance of FrameworkHelper and the payment screen will launch.
+3. Calling Mode:
+  A. Payment Mode: Call launchAnonymousSDK from the shared instance of FrameworkHelper and the payment screen will launch.
 
 <img src="./Docs/7.png" width="900">
 
@@ -121,7 +121,7 @@ FawryLaunchModel
 | enable3Ds | Bool | optional - default value = false | to allow 3D secure payment make it "true" | true |
 | authCaptureModePayment | Bool | optional - default value = false | depends on refund configuration: will be true when refund is enabled and false when refund is disabled | false |
 
-  1. Card Manager Mode: Call launchCardManager from the shared instance of FrameworkHelper and the payment screen will launch.
+  B. Card Manager Mode: Call launchCardManager from the shared instance of FrameworkHelper and the payment screen will launch.
 
 <img src="./Docs/8.png" width="500">
 
