@@ -58,7 +58,6 @@ This document illustrates how our gateway can be integrated within your iOS appl
 and pass the required parameters (Required andoptional parameters are determined below).
 
 ![](./Docs/6.png)
-<img src="./Docs/6.png" width="500">
 
 
 LaunchCustomerModel
@@ -111,7 +110,6 @@ FawryLaunchModel
 1. Calling Mode:
   1. Payment Mode: Call launchAnonymousSDK from the shared instance of FrameworkHelper and the payment screen will launch.
 
-![](./Docs/7.png)
 <img src="./Docs/7.png" width="900">
 
 | **PARAMETER** | **TYPE** | **REQUIRED** | **DESCRIPTION** | **EXAMPLE** |
@@ -125,7 +123,7 @@ FawryLaunchModel
 
   1. Card Manager Mode: Call launchCardManager from the shared instance of FrameworkHelper and the payment screen will launch.
 
-<img src="./Docs/8.png" width="700">
+<img src="./Docs/8.png" width="500">
 
 ## **Step 3: Override the SDK colors**
 
