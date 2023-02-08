@@ -20,12 +20,12 @@ Make sure you have an active FawryPay account, or [**create an account**](https:
 
 [**Download**](https://github.com/FawryPay/iOS-Fawrypay-Anonymous-sample) and test our sample application.
 
-<img src="./Docs/4.png" width="700">
-
 
 ### **How it works**
 
-![](RackMultipart20230208-1-z0v4at_html_5d715536e9c8704b.png)
+<img src="./Docs/4.png" width="700">
+
+---
 
 On this page we will walk you through iOS SDK integration steps:
 
@@ -48,7 +48,7 @@ This document illustrates how our gateway can be integrated within your iOS appl
 
 1. Import FawryPay SDK in your Swift file.
 
-![](RackMultipart20230208-1-z0v4at_html_77cdf2662e1446a0.png)
+![](./Docs/5.png)
 
 1. Create an instance of
   1. LaunchCustomerModel
@@ -58,7 +58,7 @@ This document illustrates how our gateway can be integrated within your iOS appl
 
 and pass the required parameters (Required andoptional parameters are determined below).
 
-![](RackMultipart20230208-1-z0v4at_html_915fa9700970baa8.png)
+![](./Docs/6.png)
 
 LaunchCustomerModel
 
@@ -110,7 +110,7 @@ FawryLaunchModel
 1. Calling Mode:
   1. Payment Mode: Call launchAnonymousSDK from the shared instance of FrameworkHelper and the payment screen will launch.
 
-![](RackMultipart20230208-1-z0v4at_html_246904ae289d810c.png)
+![](./Docs/7.png)
 
 | **PARAMETER** | **TYPE** | **REQUIRED** | **DESCRIPTION** | **EXAMPLE** |
 | --- | --- | --- | --- | --- |
@@ -123,7 +123,7 @@ FawryLaunchModel
 
   1. Card Manager Mode: Call launchCardManager from the shared instance of FrameworkHelper and the payment screen will launch.
 
-![](RackMultipart20230208-1-z0v4at_html_74a3dd807ef6ddc2.png)
+![](./Docs/8.png)
 
 ## **Step 3: Override the SDK colors**
 
@@ -135,11 +135,11 @@ FawryLaunchModel
   4. headerColorHex
 3. Give the keys values of your preferred hex color codes
 
-![](RackMultipart20230208-1-z0v4at_html_cda9bdd5e9e345e6.png)
+![](./Docs/9.png)
 
 Example:
 
-![](RackMultipart20230208-1-z0v4at_html_56d6bd1e5ba927ca.png)
+![](./Docs/10.png)
 
 ## **Payment Flows:**
 
