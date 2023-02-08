@@ -20,9 +20,8 @@ Make sure you have an active FawryPay account, or [**create an account**](https:
 
 [**Download**](https://github.com/FawryPay/iOS-Fawrypay-Anonymous-sample) and test our sample application.
 
-<img src="./Docs/4.png" width="200">
+<img src="./Docs/4.png" width="700">
 
-![Shape1](./Docs/4.png)
 
 ### **How it works**
 
