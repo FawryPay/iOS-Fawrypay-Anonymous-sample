@@ -38,10 +38,10 @@ On this page we will walk you through iOS SDK integration steps:
 
 This document illustrates how our gateway can be integrated within your iOS application in simple and easy steps. Please follow the steps in order to integrate the FawryPay iOS SDK in your application.
 
-1. Create a pod file in your application if it doesn't exist. Using this [Cocoapod Guid](https://guides.cocoapods.org/using/using-cocoapods.html)e
-2. Add **pod 'FawryPaySDK'** in your pod file
-3. Open terminal navigated to your project root folder
-4. Run pod install
+1. Create a pod file in your application if it doesn't exist. Using this [Cocoapod Guide](https://guides.cocoapods.org/using/using-cocoapods.html)
+3. Add **pod 'FawryPaySDK'** in your pod file and make sure you are using our [latest version](https://github.com/FawryPay/iOS-Fawrypay-Anonymous-sample/tags)
+4. Open terminal navigated to your project root folder
+5. Run pod install
 
 ## **Step 2: Initialize FawryPay IOS SDK**
 
