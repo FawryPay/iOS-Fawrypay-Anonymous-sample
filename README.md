@@ -150,7 +150,7 @@ Example:
 1. **Payment with card details, in which we take the card details (card number, cvv, expiry date) in the payment screen and then we handle the payment.**
 2. **Payment with card token, in which we have 2 screens, first one manages cards which includes (add, delete, retrieve) for cards and the cards are saved and connected to the customerProfileId parameter that you pass in the initialization. And the second screen is the normal payment screen.**
 
-**To choose which flow you want to start with there is a paymentWithCardToken flag in the initialization of the FawryLaunchModel .**
+To choose which flow you want to start with there is a **paymentWithCardToken** flag in the initialization of the **FawryLaunchModel**.
 
 **So if this flag is true you will need to pass**  **customerProfileId**  **to be able to complete a payment with its corresponding cards and if the**  **customerProfileId**  **doesn't have saved cards, when the user choose to pay with credit card we would ask him to click a button to navigate him to add card screen and after adding it successfully he will be redirected automatically to the payment screen to continue the payment flow. And in case the user wanted to delete or check which cards he saved or add a new card without opening the payment screen he can start the flow called launchCardManager as determined in step 2.**
 
@@ -176,11 +176,11 @@ if you enabled the receipt, this callback will be called after clicking the done
 
 if you disabled the receipt, this callback will be called upon the finish of the payment screen and the failure of the payment.
 
-4. **onPaymentCompletedHandler: {**  **Any****? **** in **** }**
+4. **onPaymentCompletedHandler: { Any ? in }**
 
 will be called only whether the payment passed or not. And it's called upon receiving the response of the payment either success or fail.
 
-5. **onSuccessHandler: {**  **Any****? **** in **** }**
+5. **onSuccessHandler: {Any ? in }**
 
 if the payment passed.
 
@@ -202,4 +202,4 @@ when adding cards successfully.
 
 3. **dismissBlock: { }**
 
-unused****.
+unused.
