@@ -103,9 +103,9 @@ FawryLaunchModel
 - **you can pass either signature or secureKey (in this case we will create the signature internally), knowing that if the 2 parameters are passed the secureKey will be ignored and the signature will be used.**
 - You can use below code snippet to show the receipt after payment is done or skip the user input screen while providing mobile and email instead of getting input from the user by setting the configurations **skipCustomerInput** and **skipReceipt** under FawryLaunchModel (Both configurations have a default value of **true** ).
 
-- **fawryLaunchModelObject.** ** skipCustomerInput ** ** = **** true**
+- **fawryLaunchModelObject. skipCustomerInput = true**
 
-- **fawryLaunchModelObject.** ** skipReceipt ** ** = ** ** false**
+- **fawryLaunchModelObject. skipReceipt = false**
 
 3. Calling Mode:
   a. Payment Mode: Call launchAnonymousSDK from the shared instance of FrameworkHelper and the payment screen will launch.
@@ -129,10 +129,10 @@ FawryLaunchModel
 
 1. Add a plist file to your project named "Style".
 2. Add keys named:
-  a. primaryColorHex
-  b. secondaryColorHex
-  c. tertiaryColorHex
-  d. headerColorHex
+  - primaryColorHex
+  - secondaryColorHex
+  - tertiaryColorHex
+  - headerColorHex
 3. Give the keys values of your preferred hex color codes
 
 <img src="./Docs/9.png" width="500">
