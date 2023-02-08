@@ -14,9 +14,9 @@ Make sure you have an active FawryPay account, or [**create an account**](https:
 
 ### **How iOS SDK Looks Like**
 
-![](RackMultipart20230208-1-z0v4at_html_ab43ca8ee8a0d1cf.png) ![](RackMultipart20230208-1-z0v4at_html_a44747d21be78c0a.png) ![](RackMultipart20230208-1-z0v4at_html_3f98e60295e0299e.png)
+![](./1.png) ![](./2.png) ![](./3.png)
 
-[**Download**](https://drive.google.com/file/d/1DYh0xxlMz9_o5TBDb_shjdv5r3L6suX8/view?usp=share_link) and test our sample application.
+[**Download**](https://github.com/FawryPay/iOS-Fawrypay-Anonymous-sample) and test our sample application.
 
 ![Shape1](RackMultipart20230208-1-z0v4at_html_237499165a11f2b9.gif)
 
