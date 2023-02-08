@@ -14,7 +14,6 @@ Make sure you have an active FawryPay account, or [**create an account**](https:
 
 ### **How iOS SDK Looks Like**
 
-<img src="./Docs/1.png" width="200">
 
 ![](./Docs/1.png) ![](./Docs/2.png) ![](./Docs/3.png)
 
@@ -23,7 +22,7 @@ Make sure you have an active FawryPay account, or [**create an account**](https:
 
 ### **How it works**
 
-<img src="./Docs/4.png" width="700">
+<img src="./Docs/4.png" width="900">
 
 ---
 
@@ -49,6 +48,7 @@ This document illustrates how our gateway can be integrated within your iOS appl
 1. Import FawryPay SDK in your Swift file.
 
 ![](./Docs/5.png)
+<img src="./Docs/5.png" width="900">
 
 1. Create an instance of
   1. LaunchCustomerModel
@@ -59,6 +59,8 @@ This document illustrates how our gateway can be integrated within your iOS appl
 and pass the required parameters (Required andoptional parameters are determined below).
 
 ![](./Docs/6.png)
+<img src="./Docs/6.png" width="900">
+
 
 LaunchCustomerModel
 
@@ -111,6 +113,7 @@ FawryLaunchModel
   1. Payment Mode: Call launchAnonymousSDK from the shared instance of FrameworkHelper and the payment screen will launch.
 
 ![](./Docs/7.png)
+<img src="./Docs/7.png" width="900">
 
 | **PARAMETER** | **TYPE** | **REQUIRED** | **DESCRIPTION** | **EXAMPLE** |
 | --- | --- | --- | --- | --- |
@@ -124,6 +127,7 @@ FawryLaunchModel
   1. Card Manager Mode: Call launchCardManager from the shared instance of FrameworkHelper and the payment screen will launch.
 
 ![](./Docs/8.png)
+<img src="./Docs/8.png" width="900">
 
 ## **Step 3: Override the SDK colors**
 
@@ -136,10 +140,13 @@ FawryLaunchModel
 3. Give the keys values of your preferred hex color codes
 
 ![](./Docs/9.png)
+<img src="./Docs/9.png" width="900">
 
 Example:
 
 ![](./Docs/10.png)
+<img src="./Docs/10.png" width="900">
+
 
 ## **Payment Flows:**
 
