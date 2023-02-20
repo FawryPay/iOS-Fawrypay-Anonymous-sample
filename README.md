@@ -22,7 +22,7 @@ Make sure you have an active FawryPay account, or [**create an account**](https:
 
 ### **How it works**
 
-<img src="./Docs/4.png" width="900" >
+<img src="./Docs/4.jpg" width="900" >
 
 ---
 
