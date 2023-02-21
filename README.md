@@ -198,7 +198,7 @@ To choose which flow you want to start with there is a **paymentWithCardToken** 
 
         -   if you enabled the receipt and payment succeeded, this callback will be called after clicking the done button in the receipt.
 
-        -   if you disabled the receipt and payment succeeded, this callback will be called upon the finish of the payment screen and the success of the payment.\
+        -   if you disabled the receipt and payment succeeded, this callback will be called upon the finish of the payment screen and the success of the payment.
             
 -   **launchCardManager:**\
     There are 3 callbacks:
