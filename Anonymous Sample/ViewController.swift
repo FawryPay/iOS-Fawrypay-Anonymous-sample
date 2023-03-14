@@ -71,13 +71,15 @@ class ViewController: UIViewController {
             print("Payment Method: onPaymentCompletedHandler chargeResponse \(chargeResponse.debugDescription)")
             if let response = chargeResponse as? PaymentChargeResponse{
                 print(response.merchantRefNumber)
+                print(response.orderStatus)
             }
             if let er = chargeResponse as? FawryError{
                 print(er.message)
             }
         }, onSuccessHandler: { (response) in
-            let merchantRefNumber = (response as? PaymentChargeResponse)?.merchantRefNumber ?? ""
-            print("Payment Method: onSuccessHandler: \(merchantRefNumber)")
+            let chargeResponse = response as? PaymentChargeResponse
+            print("Payment Method: onSuccessHandler: \(chargeResponse?.merchantRefNumber)")
+            print("Payment Method: onSuccessHandler: \(chargeResponse?.orderStatus)")
         })
     }
     
