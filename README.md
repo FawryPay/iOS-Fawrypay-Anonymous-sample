@@ -15,13 +15,13 @@ Make sure you have an active FawryPay account, or [**create an account**](https:
 
 ### **How iOS SDK Looks Like**
 
-![](https://raw.githubusercontent.com/FawryPay/iOS-Fawrypay-Anonymous-sample/main/Docs/1.png) ![](https://raw.githubusercontent.com/FawryPay/iOS-Fawrypay-Anonymous-sample/blob/main/Docs/2.png) ![](https://raw.githubusercontent.com/FawryPay/iOS-Fawrypay-Anonymous-sample/blob/main/Docs/3.png)
+![](https://raw.githubusercontent.com/FawryPay/iOS-Fawrypay-Anonymous-sample/main/Docs/1.png) ![](https://raw.githubusercontent.com/FawryPay/iOS-Fawrypay-Anonymous-sample/main/Docs/2.png) ![](https://raw.githubusercontent.com/FawryPay/iOS-Fawrypay-Anonymous-sample/main/Docs/3.png)
 
 [**Download**](https://github.com/FawryPay/iOS-Fawrypay-Anonymous-sample) and test our sample application.
 
 ### **How it works**
 
-<img src="https://raw.githubusercontent.com/FawryPay/iOS-Fawrypay-Anonymous-sample/blob/main/Docs/4.jpg" width="900"/>
+<img src="https://raw.githubusercontent.com/FawryPay/iOS-Fawrypay-Anonymous-sample/main/Docs/4.jpg" width="900"/>
 
 ------------------------------------------------------------------------
 
@@ -75,7 +75,7 @@ import FawryPaySDK
 
 and pass the required parameters (Required andoptional parameters are determined below).
 
-![](https://raw.githubusercontent.com/FawryPay/iOS-Fawrypay-Anonymous-sample/blob/main/Docs/6.png)
+![](https://raw.githubusercontent.com/FawryPay/iOS-Fawrypay-Anonymous-sample/main/Docs/6.png)
 
 LaunchCustomerModel
 
@@ -131,7 +131,7 @@ FawryLaunchModel
 
 a.  Payment Mode: Call launchAnonymousSDK from the shared instance of FrameworkHelper and the payment screen will launch.
 
-<img src="https://raw.githubusercontent.com/FawryPay/iOS-Fawrypay-Anonymous-sample/blob/main/Docs/7.png" width="900"/>
+<img src="https://raw.githubusercontent.com/FawryPay/iOS-Fawrypay-Anonymous-sample/main/Docs/7.png" width="900"/>
 
 | **PARAMETER**          | **TYPE**         | **REQUIRED**                     | **DESCRIPTION**                                                                                        | **EXAMPLE**                                                                    |
 |---------------|---------------|---------------|---------------|---------------|
@@ -144,7 +144,7 @@ a.  Payment Mode: Call launchAnonymousSDK from the shared instance of FrameworkH
 
 b.  Card Manager Mode: Call launchCardManager from the shared instance of FrameworkHelper and the payment screen will launch.
 
-<img src="https://raw.githubusercontent.com/FawryPay/iOS-Fawrypay-Anonymous-sample/blob/main/Docs/8.png" width="500"/>
+<img src="https://raw.githubusercontent.com/FawryPay/iOS-Fawrypay-Anonymous-sample/main/Docs/8.png" width="500"/>
 
 ## **Step 3: Override the SDK colors**
 
@@ -158,11 +158,11 @@ b.  Card Manager Mode: Call launchCardManager from the shared instance of Framew
 
 3.  Give the keys values of your preferred hex color codes
 
-<img src="https://raw.githubusercontent.com/FawryPay/iOS-Fawrypay-Anonymous-sample/blob/main/Docs/9.png" width="500"/>
+<img src="https://raw.githubusercontent.com/FawryPay/iOS-Fawrypay-Anonymous-sample/main/Docs/9.png" width="500"/>
 
 Example:
 
-<img src="https://raw.githubusercontent.com/FawryPay/iOS-Fawrypay-Anonymous-sample/blob/main/Docs/10.png" width="300"/>
+<img src="https://raw.githubusercontent.com/FawryPay/iOS-Fawrypay-Anonymous-sample/main/Docs/10.png" width="300"/>
 
 ## **Payment Flows:**
 
