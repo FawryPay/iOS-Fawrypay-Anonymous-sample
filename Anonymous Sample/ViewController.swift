@@ -58,7 +58,7 @@ class ViewController: UIViewController {
         FrameworkHelper.shared?.launchAnonymousSDK(on: self,
                                                    launchModel: launchModel,
                                                    baseURL: serverURL,
-                                                   appLanguage: AppLanguage.English,
+                                                   appLanguage: AppLanguage.Arabic,
                                                    enable3Ds: true,
                                                    authCaptureModePayment: false,
                                                    completionBlock: { (status) in
@@ -97,7 +97,12 @@ class ViewController: UIViewController {
                                            chargeItems: nil,
                                            signature: nil)
         
-        FrameworkHelper.shared?.launchCardManager(on: self, launchModel: launchModel, baseURL: serverURL, appLanguage: AppLanguage.English, currency: Currency.egp, enable3Ds: false, errorBlock: { error in
+        FrameworkHelper.shared?.launchCardManager(on: self,
+                                                  launchModel: launchModel,
+                                                  baseURL: serverURL,
+                                                  appLanguage: AppLanguage.Arabic,
+                                                  currency: Currency.egp,
+                                                  enable3Ds: false, errorBlock: { error in
             print("manageCards1", error?.message)
         }, onAddedNewCard: { card in
             print("manageCards2", card.token)
