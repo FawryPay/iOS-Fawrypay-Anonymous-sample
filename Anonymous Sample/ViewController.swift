@@ -58,7 +58,7 @@ class ViewController: UIViewController {
         FrameworkHelper.shared?.launchAnonymousSDK(on: self,
                                                    launchModel: launchModel,
                                                    baseURL: serverURL,
-                                                   appLanguage: AppLanguage.Arabic,
+                                                   appLanguage: AppLanguage.English,
                                                    enable3Ds: true,
                                                    authCaptureModePayment: false,
                                                    completionBlock: { (status) in
