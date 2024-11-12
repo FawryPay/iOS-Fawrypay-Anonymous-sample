@@ -51,7 +51,8 @@ class ViewController: UIViewController {
                                            signature: nil,
                                            allowVoucher: false,
                                            paymentWithCardToken: false,
-                                           paymentMethod: .all)
+                                           paymentMethod: .all,
+                                           externalPaymentMethod: nil)
         
         launchModel.skipCustomerInput = true
         launchModel.skipReceipt = false
