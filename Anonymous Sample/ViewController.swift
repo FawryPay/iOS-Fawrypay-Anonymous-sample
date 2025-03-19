@@ -32,12 +32,13 @@ class ViewController: UIViewController {
         let merchantInfo = LaunchMerchantModel(merchantCode: merchantCode,
                                                merchantRefNum: FrameworkHelper.shared?.getMerchantReferenceNumber(),
                                                secureKey: secureKey)
-        
+        let accounts = [ Accounts.init(accountCode: "770000017819", amount: 500), Accounts.init(accountCode: "770000017942", amount: 500)]
         let chargeInfo = ChargeItemsParamsModel(itemId: "101",
                                                 charge_description: "item description",
                                                 price: 200,
-                                                quantity: 1)
-        
+                                                quantity: 1 //,
+                                               // account: accounts /* use it for split flow */
+                                                )
         //total taxes of the items if not included in the item price
         let taxesInfo = ChargeItemsParamsModel(itemId: "taxes",
                                                charge_description: "",
