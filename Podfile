@@ -7,7 +7,8 @@ target 'Anonymous Sample' do
 
   # Pods for Anonymous Sample
 
-	pod 'FawryPaySDK', '0.1.47'
+
+	pod 'FawryPaySDK', '2.0.2'
 
 end
 

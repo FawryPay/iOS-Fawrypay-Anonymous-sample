@@ -1,5 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict/>
+<dict>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>myfawry</string>
+            </array>
+        </dict>
+    </array>
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>FPay</string>
+    </array>
+    <key>UIAppFonts</key>
+    <array>
+        <string>Cairo-SemiBold.ttf</string>
+        <string>Cairo-ExtraLight.ttf</string>
+        <string>Cairo-Regular.ttf</string>
+        <string>FawryPro-Black.ttf</string>
+        <string>Cairo-Light.ttf</string>
+        <string>FawryPro-Light.ttf</string>
+        <string>FawryPro-Bold.ttf</string>
+        <string>Cairo-Black.ttf</string>
+        <string>Cairo-Bold.ttf</string>
+    </array>
+    
+    <!-- 🆕 Photo Library Add Usage Description -->
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>We need access to your photo library to save images</string>
+</dict>
 </plist>
