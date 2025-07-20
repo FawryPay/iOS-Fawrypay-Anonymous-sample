@@ -15,7 +15,15 @@ Make sure you have an active FawryPay account, or [**create an account**](https:
 
 ### **How iOS SDK Looks Like**
 
-![](https://raw.githubusercontent.com/FawryPay/iOS-Fawrypay-Anonymous-sample/main/Docs/1.png) ![](https://raw.githubusercontent.com/FawryPay/iOS-Fawrypay-Anonymous-sample/main/Docs/2.png) ![](https://raw.githubusercontent.com/FawryPay/iOS-Fawrypay-Anonymous-sample/main/Docs/3.png)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/96e7b726-08b4-4af7-8e8e-491945ba7b39" alt="Home" width="300" />
+  <img src="https://github.com/user-attachments/assets/d1809465-65f1-430e-ab92-ed78eb5234cb" alt="Card Manager 1" width="300" />
+  <img src="https://github.com/user-attachments/assets/5827d86d-cb4d-4f72-9c48-19ced4ba3b35" alt="Receipt" width="300" />
+</p>
+
+
+
+
 
 [**Download**](https://github.com/FawryPay/iOS-Fawrypay-Anonymous-sample) and test our sample application.
 
@@ -38,7 +46,7 @@ On this page we will walk you through iOS SDK integration steps:
 This document illustrates how our gateway can be integrated within your iOS application in simple and easy steps. Please follow the steps in order to integrate the FawryPay iOS SDK in your application.
 
 1.  Create a pod file in your application if it doesn't exist. Using this [Cocoapod Guide](https://guides.cocoapods.org/using/using-cocoapods.html)
-2.  Add in your pod file and make sure you are using our (0.1.47) [Latest Version](https://github.com/FawryPay/iOS-Fawrypay-Anonymous-sample/tags)
+2.  Add in your pod file and make sure you are using our (2.0.2) [Latest Version](https://github.com/FawryPay/iOS-Fawrypay-Anonymous-sample/tags)
 
 <!-- -->
 
@@ -72,10 +80,12 @@ import FawryPaySDK
     -   LaunchMerchantModel
     -   ChargeItemsParamsModel
     -   FawryLaunchModel
+    -   Accounts model
+    -   checkoutModel
 
 and pass the required parameters (Required andoptional parameters are determined below).
 
-![](https://raw.githubusercontent.com/FawryPay/iOS-Fawrypay-Anonymous-sample/main/Docs/6.png)
+<img src="https://github.com/user-attachments/assets/df1f838d-282b-4701-85a7-61844e4f3372" width="500" />
 
 LaunchCustomerModel
 
@@ -111,6 +121,7 @@ Accounts model
 | accountCode             | String   | required     | \-              |              |
 | amount | Double   | required     | \-              |  |
 
+
 FawryLaunchModel
 
 | **PARAMETER**        | **TYPE**                 | **REQUIRED**                     | **DESCRIPTION**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | **EXAMPLE**                 |
@@ -122,6 +133,7 @@ FawryLaunchModel
 | allowVoucher         | Bool                     | optional - default value = false | True if your account supports voucher code                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | \-                          |
 | paymentWithCardToken | Bool                     | required                         | If true, the user will pay with a card token ( one of the saved cards or add new card to be saved )If false, the user will pay with card details without saving                                                                                                                                                                                                                                                                                                                                                         | \-                          |
 | paymentMethod        | Payment_Method           | Optional - default value = .all  | If the user needs to show only one payment method.                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | .all.payAtFawry.card.wallet |
+| checkoutModel        | LaunchCheckoutModel           | Required   | if you need use myfawry as payment method.                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | - |
 
 **Notes:**
 
@@ -134,12 +146,12 @@ FawryLaunchModel
     -   **fawryLaunchModelObject. skipReceipt = false**
 
 3.  Calling Mode:
+<img width="885" alt="Screenshot 2025-04-26 at 5 39 14 PM" src="https://github.com/user-attachments/assets/dcca4442-a1cb-42e1-b2c0-02ece407f48d" />
 
-<!-- -->
 
 a.  Payment Mode: Call launchAnonymousSDK from the shared instance of FrameworkHelper and the payment screen will launch.
 
-<img src="https://raw.githubusercontent.com/FawryPay/iOS-Fawrypay-Anonymous-sample/main/Docs/7.png" width="900"/>
+
 
 | **PARAMETER**          | **TYPE**         | **REQUIRED**                     | **DESCRIPTION**                                                                                        | **EXAMPLE**                                                                    |
 |---------------|---------------|---------------|---------------|---------------|
@@ -151,8 +163,8 @@ a.  Payment Mode: Call launchAnonymousSDK from the shared instance of FrameworkH
 | authCaptureModePayment | Bool             | optional - default value = false | depends on refund configuration: will be true when refund is enabled and false when refund is disabled | false                                                                          |
 
 b.  Card Manager Mode: Call launchCardManager from the shared instance of FrameworkHelper and the payment screen will launch.
+<img width="929" alt="Screenshot 2025-04-27 at 10 26 41 AM" src="https://github.com/user-attachments/assets/c5008ebb-7dc8-4358-82d6-853192b92a88" />
 
-<img src="https://raw.githubusercontent.com/FawryPay/iOS-Fawrypay-Anonymous-sample/main/Docs/8.png" width="500"/>
 
 ## **Step 3: Override the SDK colors**
 
@@ -166,11 +178,11 @@ b.  Card Manager Mode: Call launchCardManager from the shared instance of Framew
 
 3.  Give the keys values of your preferred hex color codes
 
-<img src="https://raw.githubusercontent.com/FawryPay/iOS-Fawrypay-Anonymous-sample/main/Docs/9.png" width="500"/>
+<img src="https://github.com/user-attachments/assets/89790fb4-51bd-4675-a8c1-72ccce933ca8" width="500" alt="Screenshot" />
 
 Example:
+<img src="https://github.com/user-attachments/assets/5b10196e-4215-4e01-947e-f5e6de153c8c" width="500" />
 
-<img src="https://raw.githubusercontent.com/FawryPay/iOS-Fawrypay-Anonymous-sample/main/Docs/10.png" width="300"/>
 
 ## **Payment Flows:**
 
