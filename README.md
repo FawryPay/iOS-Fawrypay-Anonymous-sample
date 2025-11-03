@@ -46,7 +46,7 @@ On this page we will walk you through iOS SDK integration steps:
 This document illustrates how our gateway can be integrated within your iOS application in simple and easy steps. Please follow the steps in order to integrate the FawryPay iOS SDK in your application.
 
 1.  Create a pod file in your application if it doesn't exist. Using this [Cocoapod Guide](https://guides.cocoapods.org/using/using-cocoapods.html)
-2.  Add in your pod file and make sure you are using our (2.0.2) [Latest Version](https://github.com/FawryPay/iOS-Fawrypay-Anonymous-sample/tags)
+2.  Add in your pod file and make sure you are using our (2.0.4) [Latest Version](https://github.com/FawryPay/iOS-Fawrypay-Anonymous-sample/tags)
 
 <!-- -->
 
@@ -94,7 +94,7 @@ LaunchCustomerModel
 | customerName      | String   | optional     | \-                                              | Name Name                                          |
 | customerEmail     | String   | optional     | \-                                              | [email\@email.com](mailto:email@email.com){.email} |
 | customerMobile    | String   | optional     | \-                                              | +0100000000                                        |
-| customerProfileId | String   | optional     | mandatory in case of payments using saved cards | 1234                                               |
+| customerProfileId | String   | optional     | mandatory in case of payments using saved cards or enable card tokanization | 1234                                               |
 
 LaunchMerchantModel
 
@@ -133,7 +133,8 @@ FawryLaunchModel
 | allowVoucher         | Bool                     | optional - default value = false | True if your account supports voucher code                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | \-                          |
 | paymentWithCardToken | Bool                     | required                         | If true, the user will pay with a card token ( one of the saved cards or add new card to be saved )If false, the user will pay with card details without saving                                                                                                                                                                                                                                                                                                                                                         | \-                          |
 | paymentMethod        | Payment_Method           | Optional - default value = .all  | If the user needs to show only one payment method.                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | .all.payAtFawry.card.wallet |
-| checkoutModel        | LaunchCheckoutModel           | Required   | if you need use myfawry as payment method.                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | - |
+| checkoutModel        | LaunchCheckoutModel           | Required   | if you need use myfawry as payment method.     | \-               
+| enableToknization        | Bool           | optional    | if you need remember card change to true .    
 
 **Notes:**
 
