@@ -44,12 +44,13 @@ class ViewController: UIViewController {
                                            chargeItems: [chargeInfo],
                                            signature: nil,
                                            allowVoucher: true,
-                                           paymentWithCardToken: true,
+                                           paymentWithCardToken: false,
                                            skipReceipt: false,
                                            skipCustomerInput: true,
                                            paymentMethod: .all,
                                            checkoutModel: checkoutModel,
-                                           applePayModel: applePayModel)
+                                           applePayModel: applePayModel,
+                                           enableToknization: true)
       
         AnonymousFrameWorkHelper.sharedInstance.launchAnonymousSDK(on: self,
                                                                    launchModel: launchModel,
