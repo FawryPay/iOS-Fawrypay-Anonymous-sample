@@ -66,7 +66,10 @@ This document illustrates how our gateway can be integrated within your iOS appl
 
 4.  Open terminal navigated to your project root folder
 5.  Run pod install
+## **OR Install SPM**  
+https://github.com/FawryPay/FawryPaySPM.git  
 
+add package dependecies version (1.0.0)
 ## **Step 2: Initialize FawryPay IOS SDK**
 
 1.  Import FawryPay SDK in your Swift file.
