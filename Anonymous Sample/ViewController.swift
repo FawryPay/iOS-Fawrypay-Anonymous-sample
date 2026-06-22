@@ -42,9 +42,8 @@ class ViewController: UIViewController {
         let launchModel = FawryLaunchModel(customer: customerInfo,
                                            merchant: merchantInfo,
                                            chargeItems: [chargeInfo],
-                                           signature: nil,
                                            allowVoucher: true,
-                                           paymentWithCardToken: false,
+                                           paymentWithCardToken: true,
                                            skipReceipt: false,
                                            skipCustomerInput: true,
                                            paymentMethod: .all,
@@ -95,7 +94,6 @@ class ViewController: UIViewController {
         let launchModel = FawryLaunchModel(customer: customerInfo,
                                            merchant: merchantInfo,
                                            chargeItems: nil,
-                                           signature: nil,
                                             allowVoucher: false,
                                             paymentWithCardToken: false)
         

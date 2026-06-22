@@ -8,7 +8,8 @@ target 'Anonymous Sample' do
   # Pods for Anonymous Sample
 
 
-	pod 'FawryPaySDK', '2.0.10'
+	pod 'FawryPaySDK', '2.0.11'
+  pod 'netfox'
 
 end
 

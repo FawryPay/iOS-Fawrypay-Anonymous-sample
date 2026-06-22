@@ -8,6 +8,7 @@
 import UIKit
 import IQKeyboardManagerSwift
 import FawryPaySDK
+import netfox
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         IQKeyboardManager.shared.enable = true
+        NFX.sharedInstance().start()
+
         if #available(iOS 13.0, *) {
             window?.overrideUserInterfaceStyle = .light
         } else {
@@ -26,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        AnonymousFrameWorkHelper.sharedInstance.handleCheckoutURL(url: url)
+//        AnonymousFrameWorkHelper.sharedInstance.handleCheckoutURL(url: url)
         return true
     }
 }
