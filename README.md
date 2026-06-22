@@ -69,7 +69,7 @@ This document illustrates how our gateway can be integrated within your iOS appl
 ## **OR Install SPM**  
 https://github.com/FawryPay/FawryPaySPM.git  
 
-add package dependecies version (1.0.0)
+add package dependecies version (1.0.4)
 ## **Step 2: Initialize FawryPay IOS SDK**
 
 1.  Import FawryPay SDK in your Swift file.
