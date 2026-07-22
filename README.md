@@ -85,6 +85,7 @@ import FawryPaySDK
     -   FawryLaunchModel
     -   Accounts model
     -   checkoutModel
+    -   applePayModel (Available from v2.0.1 and above)
 
 and pass the required parameters (Required andoptional parameters are determined below).
 
@@ -137,6 +138,7 @@ FawryLaunchModel
 | paymentWithCardToken | Bool                     | required                         | If true, the user will pay with a card token ( one of the saved cards or add new card to be saved )If false, the user will pay with card details without saving                                                                                                                                                                                                                                                                                                                                                         | \-                          |
 | paymentMethod        | Payment_Method           | Optional - default value = .all  | If the user needs to show only one payment method.                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | .all.payAtFawry.card.wallet |
 | checkoutModel        | LaunchCheckoutModel           | Required   | if you need use myfawry as payment method.     | \-               
+| applePayModel        | LaunchApplePayModel           | Required   | if you need use apple pay payment method    | Available from v2.0.1 and above              
 | enableToknization        | Bool           | optional    | if you need remember card change to true .    
 
 **Notes:**
