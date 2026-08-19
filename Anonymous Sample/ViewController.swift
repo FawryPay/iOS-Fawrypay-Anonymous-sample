@@ -46,7 +46,7 @@ class ViewController: UIViewController {
                                            paymentWithCardToken: true,
                                            skipReceipt: false,
                                            skipCustomerInput: true,
-                                           paymentMethod: .all,
+                                           excludePaymentMethods: [.payAtFawry, .mWallet, .applePay, .souhoola, .card],
                                            checkoutModel: checkoutModel,
                                            applePayModel: applePayModel,
                                            enableToknization: true)

@@ -46,11 +46,11 @@ On this page we will walk you through iOS SDK integration steps:
 This document illustrates how our gateway can be integrated within your iOS application in simple and easy steps. Please follow the steps in order to integrate the FawryPay iOS SDK in your application.
 
 1.  Create a pod file in your application if it doesn't exist. Using this [Cocoapod Guide](https://guides.cocoapods.org/using/using-cocoapods.html)
-2.  Add in your pod file and make sure you are using our (2.0.11) [Latest Version](https://github.com/FawryPay/iOS-Fawrypay-Anonymous-sample/tags)
+2.  Add in your pod file and make sure you are using our (2.0.14) [Latest Version](https://github.com/FawryPay/iOS-Fawrypay-Anonymous-sample/tags)
 
 <!-- -->
 
-    pod 'FawryPaySDK'
+    pod 'FawryPaySDK', '2.0.14'
 
 3.  Add the following code at the end of the pod file :<br>
 
@@ -69,7 +69,7 @@ This document illustrates how our gateway can be integrated within your iOS appl
 ## **OR Install SPM**  
 https://github.com/FawryPay/FawryPaySPM.git  
 
-add package dependecies version (1.0.4)
+add package dependecies version (2.0.14)
 ## **Step 2: Initialize FawryPay IOS SDK**
 
 1.  Import FawryPay SDK in your Swift file.
@@ -136,7 +136,7 @@ FawryLaunchModel
 | signature            | String                   | optional                         | You can create your own signature by concatenate the following elements on the same order and hash the result using **SHA-256** as explained:"merchantCode + merchantRefNum + customerProfileId (if exists, otherwise insert"") + itemId + quantity + Price (in tow decimal format like '10.00') + Secure hash keyIn case of the order contains multiple items the list will be **sorted** by itemId and concatenated one by one for example itemId1+ Item1quantity + Item1price + itemId2 + Item2quantity + Item2price | \-                          |
 | allowVoucher         | Bool                     | optional - default value = false | True if your account supports voucher code                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | \-                          |
 | paymentWithCardToken | Bool                     | required                         | If true, the user will pay with a card token ( one of the saved cards or add new card to be saved )If false, the user will pay with card details without saving                                                                                                                                                                                                                                                                                                                                                         | \-                          |
-| paymentMethod        | Payment_Method           | Optional - default value = .all  | If the user needs to show only one payment method.                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | .all.payAtFawry.card.wallet |
+| excludePaymentMethods | [Payment_Method]        | Optional - default value = nil   | Payment methods to hide from the payment screen. Available values: `.payAtFawry`, `.card`, `.mWallet`, `.valu`, `.installment`, `.creditCard`, `.yellowCard`, `.forsa`, `.souhoola`, `.aman`, `.myFawry`, `.applePay`, `.loyalty`                                                                                                                                                                                                                                                                                         | [.payAtFawry, .mWallet, .applePay, .souhoola, .card] |
 | checkoutModel        | LaunchCheckoutModel           | Required   | if you need use myfawry as payment method.     | LaunchCheckoutModel(scheme: "myfawry")              
 | applePayModel        | LaunchApplePayModel           | Required   | if you need use apple pay payment method    | LaunchApplePayModel(merchantID: "example.MerchantID")           
 | enableToknization        | Bool           | optional    | if you need remember card change to true .    
