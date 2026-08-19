@@ -144,7 +144,7 @@
 			);
 			mainGroup = B68611EE29939E5D009D9F74;
 			packageReferences = (
-				508CB8BB2EE06DA10043A9C5 /* XCRemoteSwiftPackageReference "FawryPaySPM" */,
+				50C622323009033300226043 /* XCRemoteSwiftPackageReference "FawryPaySPM" */,
 			);
 			productRefGroup = B68611F829939E5D009D9F74 /* Products */;
 			projectDirPath = "";
@@ -339,11 +339,11 @@
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 25YHMUQYM4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Anonymous Sample/Info.plist";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need access to your photo library to save images";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -373,11 +373,11 @@
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 25YHMUQYM4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Anonymous Sample/Info.plist";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need access to your photo library to save images";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -418,12 +418,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		508CB8BB2EE06DA10043A9C5 /* XCRemoteSwiftPackageReference "FawryPaySPM" */ = {
+		50C622323009033300226043 /* XCRemoteSwiftPackageReference "FawryPaySPM" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/FawryPay/FawryPaySPM.git";
 			requirement = {
-				kind = exactVersion;
-				version = 1.0.0;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
