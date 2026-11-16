@@ -1,0 +1,19 @@
+//
+//  SceneDelegate.swift
+//  Anonymous Sample
+//
+
+import UIKit
+
+class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+    var window: UIWindow?
+
+    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        guard scene is UIWindowScene else { return }
+        window?.overrideUserInterfaceStyle = .light
+    }
+
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+//        AnonymousFrameWorkHelper.sharedInstance.handleCheckoutURL(url: URLContexts.first?.url)
+    }
+}
