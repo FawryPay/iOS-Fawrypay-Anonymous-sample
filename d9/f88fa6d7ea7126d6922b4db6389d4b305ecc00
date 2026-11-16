@@ -1,0 +1,32 @@
+"Anonymous Sample.xcodeproj/project.pbxproj"
+  s_80ce180b202462::t_f2b85adbf59373 21
+  s_80ce180b202462::t_5c2db3b5dd2133 42
+  s_80ce180b202462::t_7c6447b2dab5a2 111
+  s_80ce180b202462::t_4adada03277924 19,29,39,48,56,82-83,94,121-128,136,140,207,213,215,217,221,224,231-235,237-239,243,255,400,417,426,435,452,461
+"Anonymous Sample/SceneDelegate.swift"
+  s_80ce180b202462::t_a59785ada7cf75 1-16,18-19
+  s_80ce180b202462::t_7db89bb21c415c 17
+"Anonymous Sample/AppDelegate.swift"
+  s_80ce180b202462::t_a7f34990978241 15,21-25
+  s_80ce180b202462::t_3ca0b1e64f6666 26
+"Anonymous Sample/Info.plist"
+  s_80ce180b202462::t_d6d993199b3935 36-54
+Podfile
+  s_80ce180b202462::t_c9feedec4efc39 11,19
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "d9f88fa6d7ea7126d6922b4db6389d4b305ecc00",
+  "prompts": {},
+  "sessions": {
+    "s_80ce180b202462": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "e2bc447a-f757-484d-8431-221a8a8ec4e3",
+        "model": "grok-4.7"
+      },
+      "human_author": "Abdallah Raed <abdallah.raed@fawry.com>"
+    }
+  }
+}
